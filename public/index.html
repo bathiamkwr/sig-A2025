@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Carnet de bord</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f4f5fb;--card:#ffffff;--muted:#6b7280;--accent:#1d9bf0;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);font-family:Inter,system-ui,-apple-system,Segoe UI;color:#0b1120}
+    .wrap{max-width:1120px;margin:32px auto;padding:16px}
+    h1{font-family:'Playfair Display',serif;margin:4px 0 14px;font-size:28px}
+    .subtitle{color:var(--muted);font-size:14px;margin-bottom:20px}
+
+    .grid{
+      display:flex;
+      flex-direction:column;
+      gap:24px;
+      max-width:780px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+    .card{background:var(--card);border-radius:16px;box-shadow:0 10px 30px rgba(15,23,42,0.08);padding:14px;display:flex;flex-direction:column}
+    .badge{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:#fff;border-radius:999px;padding:3px 8px;margin-bottom:8px;align-self:flex-start}
+    .badge.tw{background:#1d9bf0}.badge.fb{background:#1778f2}.badge.ig{background:linear-gradient(45deg,#f56040,#e1306c,#c13584,#5851db,#405de6)}
+    .badge.tt{background:#000}.badge.yt{background:#ff0000}.badge.pi{background:#e60023}.badge.li{background:#0a66c2}
+
+    .header{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+    .avatar{width:40px;height:40px;border-radius:50%;object-fit:cover}
+    .name{font-weight:600;font-size:14px}
+    .handle{font-size:12px;color:var(--muted)}
+    .time{margin-left:auto;font-size:12px;color:var(--muted)}
+
+    .text{font-size:14px;line-height:1.55;margin:6px 0 10px;color:#111827}
+
+    /* MEDIA FIX FOR ALL PLATFORMS */
+    .media{
+      border-radius:12px;
+      overflow:hidden;
+      margin-top:6px;
+      background:#e5e7eb;
+      position:relative;
+      width:100%;
+      height:auto;
+    }
+
+    /* Prevent image cropping everywhere */
+    .media img,
+    .ig-square .media img,
+    .pi-tall .media img {
+      width:100%;
+      height:auto;
+      object-fit:contain; /* prevents unwanted cropping */
+      display:block;
+    }
+
+    .media .play{
+      position:absolute;
+      inset:0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:32px;
+      color:#fff;
+      text-shadow:0 4px 14px rgba(0,0,0,0.5)
+    }
+
+    .stats{display:flex;gap:18px;font-size:12px;color:var(--muted);margin-top:10px}
+
+    /* TikTok vertical */
+    .tiktok{background:#050816;color:#e5e7eb}
+    .tiktok .text{color:#e5e7eb}
+    .tiktok .media{height:auto}
+
+    /* Instagram FIXED — no forced square */
+    .ig-square .media{
+      width:100%;
+      height:auto;
+    }
+
+    /* Pinterest FIXED — no forced tall height */
+    .pi-tall .media{
+      width:100%;
+      height:auto;
+    }
+
+    /* LinkedIn */
+    .li-card{border-left:4px solid #0a66c2}
+    .li-footer{margin-top:10px;font-size:12px;color:var(--muted)}
+
+    @media print{
+      body{background:#fff}
+      .card{box-shadow:none;page-break-inside:avoid}
+    }
+    @page { size: A4; margin: 20mm; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Carnet de bord - Bathie DIOUF (11372165)</h1>
+    <p class="subtitle">
+
+  Pour ce carnet de bord, j’ai choisi un format inspiré d’un <strong>agrégateur de réseaux sociaux</strong> : 
+  une seule plateforme qui réunit des contenus conçus pour Twitter, Facebook, TikTok, Instagram, YouTube, Pinterest et LinkedIn.<br><br>
+
+  C’est une façon de penser les réseaux sociaux non plus comme des mondes séparés, mais comme un <strong>écosystème unifié</strong> où chaque plateforme apporte sa couleur à la même histoire.</p>
+
+
+
+  
+    <div class="grid">
+
+
+      <!-- Retweet example (full-width, one-per-line) - 1 -->
+  <article class="card tweet-full">
+    <span class="badge tw">Twitter</span>
+    <div class="header">
+      <img class="avatar" src="https://picsum.photos/seed/rtA/80" />
+      <div>
+        <div class="name">@black_panther</div>
+        <div class="handle">Inspirations</div>
+      </div>
+      <div class="time">· 14 sem</div>
+    </div>
+
+    <p class="text"><p class="text">
+  <strong>Et pourquoi j’invite T’Challa ?</strong><br><br>
+
+  Parce qu’il incarne exactement l’équilibre que je cherche : une vision élevée, une mission profondément ancrée dans l’action, et une ambition toujours guidée par l’éthique.<br><br>
+
+  • <strong>Pour ma Vision</strong>, T’Challa m’aiderait à imaginer un futur où la technologie, la donnée et l’innovation servent réellement les communautés, un progrès utile et humain, pas seulement performant.<br><br>
+
+  • <strong>Pour ma Mission</strong>, il m’inspirerait à agir avec intégrité, à utiliser mes forces techniques et ma capacité à bâtir des systèmes pour créer plus de cohérence, d’impact positif.<br><br>
+
+  • <strong>Pour mon Ambition</strong>, sa discipline et sa volonté d’élever son peuple me pousseraient à viser un rôle où je peux transformer durablement les environnements où j'évolue.<br><br>
+
+  En l’invitant dans cette réflexion, je cherche une figure qui me rappelle que l’innovation n’a de valeur que si elle élève les autres, et que mon propre parcours doit rester aligné sur cette idée. T’Challa représente ce pont idéal entre puissance, sagesse et service.
+</p>
+</p>
+    <img class="rt-img" src="images/1.png" />
+
+    <!-- QUOTED tweet -->
+    <div class="rt-box">
+      <div class="rt-meta">
+        <img class="rt-avatar" src="https://picsum.photos/seed/originalX/80" />
+        <div>
+          <strong>Où j’en suis ?</strong>
+          <div class="rt-time">@mission</div>
+        </div>
+      </div>
+      <div class="rt-text"><p class="text">
+  Aujourd’hui, je me situe clairement à l’étape <strong>Mission</strong>.<br>
+  Ma vision est présente et relativement stable : <strong>contribuer à un monde où l’innovation est utile, accessible et porteuse de sens, en créant des solutions qui améliorent réellement la vie des autres.</strong><br><br>
+
+  Mais je suis à un moment où cette intention doit devenir <strong>une contribution tangible</strong> :<br><br>
+
+  • clarifier comment j’agis,<br>
+  • identifier les talents que je veux mobiliser,<br>
+  • définir ma manière spécifique d’avoir de l’impact,<br>
+  • structurer mes actions pour avancer de façon cohérente vers cette vision.<br><br>
+
+  C’est une phase où je dois passer de l’inspiration à la construction.
+</p>
+</div>
+
+      <div class="rt-actions">
+        <span>💬 21</span>
+        <span>🔁 103</span>
+        <span>❤️ 640</span>
+        <span>📊 55K</span>
+      </div>
+    </div>
+
+    <div class="stats"><span>💬 4</span><span>🔁 18</span><span>❤️ 90</span></div>
+  </article>
+
+
+      <!-- Twitter style 2 -->
+      <article class="card">
+        <span class="badge tw">Twitter</span>
+        <div class="header">
+          <img class="avatar" src="https://picsum.photos/seed/tw/80" alt="avatar" />
+          <div>
+            <div class="name">Demandez, relancez, confrontez, découvrez, profitez !</div>
+            <div class="handle">@carnet_de_bord</div>
+          </div>
+          <div class="time">· 13 sem</div>
+        </div>
+        <p class="text">
+  Aujourd’hui, j’ai exploré ChatGPT dans le cadre de mon cours d’innovation, et voilà ce que j’en retiens 👇✨<br><br>
+
+  L’IA amplifie la créativité : chaque idée trouve une forme, une image, une direction.<br>
+  Elle rend l’innovation plus accessible, plus rapide, presque tangible.<br>
+  Et surtout, elle ouvre un espace où curiosité rime avec clarté.<br><br>
+
+  Ce qui m’a le plus surpris :<br>
+  • La facilité avec laquelle une idée abstraite devient une image cohérente. 🎨<br>
+  • La rapidité à structurer des concepts complexes en secondes. ⚡️<br><br>
+
+  L’image la plus marquante ?<br>
+  Une étincelle qui se transforme en réseau : l’idée qui prend vie. 🔥➡️🌐<br><br>
+
+  <strong>#Innovation #Creativité #IA #ChatGPT #DesignThinking #OpenAI #FutureOfWork #Tech4Good</strong>
+</p>
+      <div class="media"><img src="images/2.png" alt="cover" /></div>
+      <div class="stats"><span>💬 12</span><span>🔁 38</span><span>❤️ 210</span></div>
+      </article>
+
+      <!-- Retweet example (full-width, one-per-line) - 3 -->
+  <article class="card tweet-full">
+    <span class="badge tw">Twitter</span>
+    <div class="header">
+      <img class="avatar" src="https://picsum.photos/seed/rtA/80" />
+      <div>
+        <div class="name">@voyageurs</div>
+        <div class="handle">Voyages</div>
+      </div>
+      <div class="time">· 12 sem</div>
+    </div>
+
+    <p class="text">
+  Lors de mon dernier voyage, je me suis intégré à la communauté locale en adoptant une démarche d’observation et de participation. 
+  Dans un marché local, par exemple, j’ai discuté longuement avec un vendeur qui m’a expliqué l’origine des produits, les expressions locales pour négocier, et les codes sociaux non écrits du lieu. 
+  Je suis revenu plusieurs fois sur ce lieu et cette immersion m’a permis de comprendre la dynamique réelle du terrain.<br><br>
+
+  <strong>Les leçons pour dynamiser ma communauté politique-innovation</strong><br><br>
+
+  • Créer des rituels<br>
+  • Encourager l’observation avant la prise de parole<br>
+  • Favoriser des espaces d’échanges simples et humains<br>
+  • Valoriser les petites contributions<br>
+  • Mettre en avant les histoires personnelles<br>
+</p>
+
+    <img class="rt-img" src="images/3-2.png" />
+
+    <!-- QUOTED tweet -->
+    <div class="rt-box">
+      <div class="rt-meta">
+        <img class="rt-avatar" src="https://picsum.photos/seed/originalX/80" />
+        <div>
+          <strong>Si je devais bâtir une communauté ...?</strong>
+          <div class="rt-time">@communauté</div>
+        </div>
+      </div>
+      <div class="rt-text">
+
+        <p class="text">
+  Si je devais bâtir une communauté autour de ma passion pour la politique et la géopolitique, elle prendrait la forme d’un <strong>laboratoire citoyen d’innovation politique</strong>. 
+  Un espace où étudiants, curieux, analystes et professionnels imaginent ensemble des solutions nouvelles aux enjeux géopolitiques contemporains. 
+  La communauté serait hybride avec des <strong>rencontres en ligne</strong>, des <strong>ateliers d’innovation démocratique</strong> mais également des <strong>simulations géopolitiques collaboratives</strong>.<br><br>
+  <strong>Et vous comment vous faites pour intégré une communauté ?</strong>
+
+</p>
+<img class="rt-img" src="images/3-1.png" />
+</div>
+
+      <div class="rt-actions">
+        <span>💬 13</span>
+        <span>🔁 100</span>
+        <span>❤️ 340</span>
+        <span>📊 23K</span>
+      </div>
+    </div>
+
+    <div class="stats"><span>💬 4</span><span>🔁 18</span><span>❤️ 90</span></div>
+  </article>
+
+
+
+
+       <!-- Twitter style 4 -->
+      <article class="card">
+        <span class="badge tw">Twitter</span>
+        <div class="header">
+          <img class="avatar" src="https://picsum.photos/seed/tw/80" alt="avatar" />
+          <div>
+            <div class="name">Confiance en ma créativité </div>
+            <div class="handle">@carnet_de_bord</div>
+          </div>
+          <div class="time">· 10 sem</div>
+        </div>
+        <p class="text">
+  Ce qui me donne le plus confiance en ma créativité, c’est exactement ce que décrit la vidéo : les petits succès répétés, ces “guided mastery moments” où l’on passe de la peur à la familiarité.  
+  À force de tester, d’itérer, d’oser un pas supplémentaire, je réalise que tout le monde peut être créatif.<br><br>
+
+Et pour rendre les autres créatifs, Je reprends trois enseignements clés de la vidéo de David Kelley :<br><br>
+
+  • Grande tolérance à l’erreur : cela casse la pression du résultat et favorise l’exploration.<br>
+  • Des “baby steps” pour initier la confiance au lieu de demander directement un grand geste créatif.<br>
+  • Des exemples inspirants pour montrer que la créativité est accessible.<br><br>
+
+  <strong>#Créativité #Innovation #DesignThinking #GuidedMastery #Apprentissage #Inspiration #GrowthMindset</strong>
+</p>
+
+      <div class="stats"><span>💬 12</span><span>🔁 38</span><span>❤️ 210</span></div>
+      </article>
+
+
+
+      <!-- LinkedIn style 5 -->
+      <article class="card li-card">
+        <span class="badge li">LinkedIn</span>
+        <div class="header">
+          <img class="avatar" src="https://picsum.photos/seed/li/80" alt="avatar" />
+          <div>
+            <div class="name">BaSaMa DI</div>
+            <div class="handle">Mon Anti-CV</div>
+          </div>
+        </div>
+        <p class="text">
+  <strong>1. Perdre de vue la structure dans un gros projet de données</strong><br><br>
+
+  • <strong>Erreur :</strong> Lors d’un projet chez Wise Systems, j’ai lancé une refonte du data-lake sans schéma global ni conventions de nommage. Résultat : tables multipliées, dépendances floues et maintenance difficile.<br><br>
+
+  • <strong>Apprentissages :</strong> J’ai compris que la gouvernance doit être pensée dès le départ (schémas, conventions, droits, documentation et métriques de qualité). Aujourd’hui, je ne démarre plus aucun projet sans cadre clair.<br><br>
+
+  <strong>2. Sous-estimer la communication et les parties prenantes</strong><br><br>
+
+  • <strong>Erreur :</strong> Lors d’une migration chez Gap Inc., j’ai trop privilégié la technique et pas assez consulté les métiers, ce qui a mené à des dashboards incohérents en production.<br><br>
+
+  • <strong>Apprentissages :</strong> Impliquer tôt les utilisateurs, valider la logique métier, organiser des ateliers, prototypes et revues régulières. La communication est aussi stratégique que le code.<br><br>
+
+  <strong>3. Ne pas anticiper les erreurs de production</strong><br><br>
+
+  • <strong>Erreur :</strong> Chez Big Fish Games, une permission mal testée en staging a causé une interruption d’une heure en production.<br><br>
+
+  • <strong>Apprentissages :</strong> Intégrer des tests de bout en bout, des plans de reprise, du backfill automatisé et des alertes en streaming. L’excellence opérationnelle repose sur la capacité à prévoir les échecs.<br><br>
+
+  <strong>4. Réflexion sur la citation de David Lynch</strong><br><br>
+
+  Pour moi, l’intuition est le « savoir agir ». En data engineering, l’analyse donne la structure, mais l’intuition oriente vers ce qui mérite attention, détecte l’anormal et guide les choix difficiles. Mes expériences – et mes échecs – ont affiné cette intuition, qui est aujourd’hui un véritable outil de décision technique.<br>
+</p>
+      <img src="images/5.png" alt="" />
+        <div class="li-footer">👍 178 · 💬 24 commentaires · 🔁 11 partages</div>
+      </article>
+
+  
+
+       <!-- Twitter style 6 -->
+      <article class="card">
+        <span class="badge tw">Twitter</span>
+        <div class="header">
+          <img class="avatar" src="https://picsum.photos/seed/tw/80" alt="avatar" />
+          <div>
+            <div class="name">Entre créativité individuelle et collective.</div>
+            <div class="handle">@créativité_individuelle_et_collective</div>
+          </div>
+          <div class="time">· 9 sem</div>
+        </div>
+        <p class="text">Une plateforme collaborative qui réinvente l’innovation en équilibre.</p>
+        <div class="media"><img src="images/6.png" alt="cover" /></div>
+        <div class="stats"><span>💬 12</span><span>🔁 38</span><span>❤️ 210</span></div>
+      </article>
+
+
+
+      <!-- Facebook style - 7-->
+      <article class="card">
+        <span class="badge fb">Facebook</span>
+        <div class="header">
+          <img class="avatar" src="https://picsum.photos/seed/fb/80" alt="avatar" />
+          <div>
+            <div class="name">L’innovation ouverte comme levier</div>
+            <div class="handle">Page · Journal personnel</div>
+          </div>
+        </div>
+        <p class="text">Pour représenter l'idée de l'innovation ouverte comme réponse à la problématique de l'accès à l'eau potable et à l'assainissement dans les communautés rurales et périurbaines d'Afrique, je vais créer une image qui intègre les spécificités du contexte africain.<br> Voici ce que je vais inclure dans cette image :<br>
+<strong>Un paysage africain varié et reconnaissable :</strong> L'image montrera un mélange de villages ruraux et de zones périurbaines afin de situer clairement le contexte géographique africain.<br>
+<strong>Des solutions d'eau et d'assainissement innovantes et adaptées localement :</strong> Je représenterai des exemples concrets de projets mis en œuvre. Cela pourrait inclure des puits modernisés ou des systèmes de collecte d'eau de pluie, des toilettes écologiques (Ecosan), des stations de purification d'eau à petite échelle ou des points d'eau gérés par la communauté.<br>
+<strong>Des acteurs diversifiés en collaboration (innovation ouverte) : </strong>
+<ul>
+    <li>Membres de la communauté locale</li>
+    <li>Experts et ONG</li>
+    <li>Innovateurs locaux et startups</li>
+    <li>La diaspora et des partenaires internationaux</li>
+  </ul>
+<strong>L'intégration de la technologie et des savoirs traditionnels:</strong> L'image montrera comment les technologies modernes (panneaux solaires, capteurs simples, solutions mobiles) peuvent s'intégrer aux méthodes et connaissances ancestrales de gestion de l'eau, valorisant ainsi l'ingéniosité locale.<br>
+<strong>Un sentiment d'autonomisation et d'espoir :</strong> Les personnages exprimeront de la collaboration, de l'engagement et une joie liée à l'amélioration des conditions de vie, avec un ciel lumineux symbolisant un avenir prometteur grâce à ces initiatives collaboratives.</p>
+        <div class="media"><img src="images/7.png" alt="cover" /></div>
+        <div class="stats"><span>👍 134</span><span>💬 29 commentaires</span><span>↪ 9 partages</span></div>
+      </article>
+
+        <!-- YouTube style 8 -->
+      <article class="card">
+        <span class="badge yt">YouTube</span>
+        <div class="media">
+          <img src="images/8.png" alt="thumbnail" />
+          <div class="play">▶</div>
+        </div>
+        <p class="text"><strong>RAID Urbain : Habitat 67</strong> Quand j’observais Habitat 67 depuis le Vieux-Port de Montréal, je pensais qu’il s’agissait d’anciens logements abandonnés. Mais après avoir vérifié en ligne, j’ai découvert que le lieu était bel et bien habité. Je visite souvent différents endroits à Montréal, mais jamais Habitat 67 ; c’est grâce à ce cours que j’ai enfin pu l’explorer. J’y ai découvert un lieu véritablement unique, autant par la vision qui l’a inspiré que par l’expérience qu’il offre sur place.
+À première vue, ces modules empilés ressemblent à des blocs de carton mal alignés ou même à un village Minecraft. Pourtant, derrière cette apparence atypique se cache une conception architecturale profondément réfléchie : les blocs interconnectés créent un véritable tissu humain.<br> Cela m’a rappelé les villages du Sénégal, où les concessions familiales sont reliées par des allées et des espaces qui encouragent naturellement la vie communautaire plutôt que l’individualisme.<br>
+J’ai également constaté que la vision de l’architecte, qui cherchait à imaginer les habitats du futur, contraste fortement avec l’architecture de nos immeubles actuels. Ce décalage donne à Habitat 67 une identité véritablement unique et en fait un excellent exemple pour repenser notre manière de vivre ensemble.<br> <strong>#architecture #innovation #carnet</strong></p>
+        <div class="stats"><span>▶ 12 430 vues</span><span>👍 640</span><span>💬 87</span></div>
+      </article>
+
+        <!-- Instagram style - 9-1-->
+      <article class="card ig-square">
+        <span class="badge ig">Instagram</span>
+        <div class="header">
+          <img class="avatar" src="https://picsum.photos/seed/ig/80" alt="avatar" />
+          <div>
+            <div class="name">Mon coin le moins nature</div>
+            <div class="handle">@innovation</div>
+          </div>
+          <div class="time">· 3 sem</div>
+        </div>
+        <div class="media">
+          <img src="images/9-1.jpg" />
+        </div>
+        <p class="text"><strong>Mon coin le moins nature</strong>L'image initiale (mon bureau) est l'archétype montre le parfait "coin le moins nature" : un désert austère où même la plante est une imposture en plastique.<br>
+L'anti-nature par excellence</p>
+        <div class="stats"><span>❤ 842</span><span>💬 54</span><span>🔖 Enregistré 98×</span></div>
+      </article>
+
+
+      <!-- Pinterest style 9-2 -->
+      <article class="card pi-tall">
+        <span class="badge pi">Pinterest</span>
+        <div class="media">
+          <img src="images/9-2.png" alt="" />
+        </div>
+        <p class="text">Pour faire mieux , me métaphore serait celle du "Jardin Intérieur",  avec une nuance de "micro-écosystème maîtrisé". On passe de la fausse plante à quelques vraies, de profiter de la lumiére naturelle ...
+Quels bénéfices j’en espérerais ?
+<ul>
+<li><strong>Apaisement mental :</strong> un environnement plus naturel réduit le stress.</li>
+<li><strong>Créativité renforcée :</strong> un espace inspirant favorise l’imaginaire, comme dans les expériences immersives d’Espace pour la vie.</li>
+<li><strong>Meilleure concentration :</strong> les éléments naturels, même symboliques, aident à rester ancré et calme.</li>
+</ul></p>
+        <div class="stats"><span>📌 Épinglé par 320 pers.</span><span>↪ 18 essais dérivés</span></div>
+      </article>
+
+
+       <!-- Facebook style - 10-->
+      <article class="card">
+        <span class="badge fb">Facebook</span>
+        <div class="header">
+          <img class="avatar" src="https://picsum.photos/seed/fb/80" alt="avatar" />
+          <div>
+            <div class="name">Les 36 apprentissages sur la créativité, l’innovation et la dynamique collective</div>
+            <div class="handle">Page · Carnet de bord</div>
+          </div>
+        </div>
+        <p class="text">
+  Les 36 apprentissages sur la créativité, l’innovation et la dynamique collective<br><br>
+
+  <strong>1. La créativité n’est pas innée :</strong> elle s’apprend, se travaille et se pratique.<br>
+  <strong>2. Les idées émergent rarement seules :</strong> elles naissent de rencontres.<br>
+  <strong>3. Les grandes innovations semblent évidentes après coup :</strong> mais elles sont rarement prévisibles.<br>
+  <strong>4. Les contraintes peuvent stimuler la créativité :</strong> en forçant des solutions inédites.<br>
+  <strong>5. L’innovation se situe à la frontière :</strong> entre ce que l’on sait et ce que l’on ignore.<br>
+  <strong>6. Il faut souvent plusieurs mauvaises idées :</strong> pour en atteindre une bonne.<br>
+  <strong>7. La créativité nécessite une “respiration créative” :</strong> des moments d’alternance entre action et pause.<br>
+  <strong>8. L’innovation est un processus :</strong> pas un flash de génie.<br>
+  <strong>9. Le lieu influence la créativité :</strong> certains espaces stimulent l’imagination plus que d’autres.<br>
+  <strong>10. Changer de décor :</strong> ou se déplacer active la pensée divergente.<br>
+  <strong>11. Les objets frontières facilitent le dialogue :</strong> entre mondes différents (ex : prototypes, dessins).<br>
+  <strong>12. Un environnement sécurisant :</strong> encourage la prise de risque créative.<br>
+  <strong>13. Les rituels comme les Creative Mornings :</strong> renforcent le climat créatif.<br>
+  <strong>14. Une communauté d’innovation fonctionne :</strong> grâce à ses qualités et ses défauts.<br>
+  <strong>15. La culture d’innovation repose sur l’identité collective :</strong> des gens qui font des choses ensemble.<br>
+  <strong>16. L’innovation va souvent plus loin :</strong> lorsque les perspectives s’entrecroisent.<br>
+  <strong>17. L’entreprise ambidextre :</strong> concilie exploration et exploitation simultanément.<br>
+  <strong>18. Quand toute menace est la même chose :</strong> l’innovation se bloque.<br>
+  <strong>19. Les réseaux faibles :</strong> (liens éloignés du cercle habituel) apportent des idées nouvelles.<br>
+  <strong>20. Les idées naissent souvent “en bas” :</strong> dans l’environnement (clients, communautés d’utilisateurs).<br>
+  <strong>21. L’appropriation d’idées est la clé :</strong> ressources, techniques, pouvoir de décider.<br>
+  <strong>22. Le middleground fait le lien :</strong> entre le haut et le bas, gérant les paradoxes.<br>
+  <strong>23. Le middleground participe à l’innovation :</strong> sans en tirer l’auteur direct.<br>
+  <strong>24. Le paradoxe de l’innovation :</strong> équilibrer l’inconnu à explorer et l’existant à exploiter.<br>
+  <strong>25. L’ouverture d’esprit :</strong> est une condition essentielle pour innover.<br>
+  <strong>26. La curiosité :</strong> nourrit et continue la créativité.<br>
+  <strong>27. L’empathie :</strong> permet de comprendre plus finement les besoins réels d’un client.<br>
+  <strong>28. L’erreur :</strong> fait partie intégrante du processus créatif.<br>
+  <strong>29. L’innovation implique :</strong> d’accepter l’incertitude.<br>
+  <strong>30. La capacité de créer vient aussi des métaphores :</strong> qui décalent et transforment.<br>
+  <strong>31. La société de la connaissance :</strong> évolue vers une société de la création.<br>
+  <strong>32. L’entrepreneuriat :</strong> offre une manière plus agile et souple de faire émerger des idées innovantes.<br>
+  <strong>33. Il existe une différence :</strong> entre disruption tactique (améliorer) et disruption stratégique (réinventer).<br>
+  <strong>34. Le premier réflexe des organisations :</strong> est de reproduire le même modèle plutôt que de changer.<br>
+  <strong>35. Le big-bang de l’innovation :</strong> consiste à ajouter du sens : ne plus faire l’abandon complexe, mais réévaluer l’importance de la simplicité.<br>
+  <strong>36. J’ai également beaucoup appris :</strong> grâce aux personnalités inspirantes, aux communautés d’innovation, aux projets créatifs, aux anecdotes marquantes et aux activités en classe inversées.<br>
+</p>
+
+        <div class="media"><img src="images/10.png" alt="cover" /></div>
+        <div class="stats"><span>👍 134</span><span>💬 29 commentaires</span><span>↪ 9 partages</span></div>
+      </article>
+
+         <!-- Facebook style - 11-->
+      <article class="card">
+        <span class="badge fb">Facebook</span>
+        <div class="header">
+          <img class="avatar" src="https://picsum.photos/seed/fb/80" alt="avatar" />
+          <div>
+            <div class="name">Innovation durable</div>
+            <div class="handle">Page · Carnet de bord</div>
+          </div>
+        </div>
+        <p class="text">Bonjour à toutes et à tous <strong>@tous</strong> 👋<br>
+
+Aujourd’hui, j’aimerais partager avec vous une petite réflexion sur la manière dont une décroissance possible peut coexister avec une dynamique d’innovation. Dans le contexte actuel, où notre idée du progrès évolue, je trouve essentiel de repenser ce que “faire mieux” signifie vraiment.<br>
+
+Et si réinventer le progrès passait par plus de sobriété, plus d’ingéniosité collective et une innovation recentrée sur l’essentiel ? 🌱✨<br></p>
+        <div class="media"><img src="images/11.png" alt="cover" /></div>
+        <div class="stats"><span>👍 134</span><span>💬 29 commentaires</span><span>↪ 9 partages</span></div>
+      </article>
+
+      <!-- TikTok style 12 -->
+      <article class="card tiktok">
+        <span class="badge tt">TikTok</span>
+        <div class="header">
+          <img class="avatar" src="https://picsum.photos/seed/tt/80" alt="avatar" />
+          <div>
+            <div class="name">@sorcier_data</div>
+            <div class="handle">Carnet en construction</div>
+          </div>
+          <div class="time">· 1 sem</div>
+        </div>
+        <div class="media"><img src="images/12.png" alt="cover" />
+          <div class="play">▶</div>
+        </div>
+        <p class="text">
+  Je me reconnais pleinement dans le rôle du <strong>sorcier</strong> : celui qui mélange, transforme et réinvente, faisant émerger du nouveau à partir de l’existant.<br><br>
+
+  Si je devais donner une voix à ma manière de contribuer à l’innovation, ce serait une voix de <strong>baryton</strong> : profonde, posée, présente sans chercher l’éclat du premier rôle.<br><br>
+
+  Je ne vise pas forcément le devant de la scène, mais j’aime intervenir au moment clé, là où une combinaison inattendue ou une nouvelle perspective peut réorienter un projet.<br><br>
+
+  Mon apport à l’innovation réside dans cette capacité à façonner de nouvelles formes au cœur de la complexité, comme un sorcier qui révèle une vision encore inexplorée.<br>
+</p>
+
+        <div class="stats"><span>❤ 2.3K</span><span>💬 120</span><span>↻ 310 partages</span></div>
+      </article>
+
+      </div>
+  </div>
+
+
+<style>
+  .tweet-full{width:100%;max-width:780px;margin:0 auto}
+  .rt-box{border:1px solid #e1e8f0;background:#f9fafb;border-radius:16px;padding:16px;margin-top:12px}
+  .rt-meta{display:flex;gap:10px;align-items:center;margin-bottom:8px}
+  .rt-avatar{width:42px;height:42px;border-radius:50%;object-fit:cover}
+  .rt-img{width:100%;max-width:680px;display:block;margin:16px auto;border-radius:12px;object-fit:cover}
+  .rt-actions{display:flex;gap:18px;font-size:14px;color:#65748b;margin-top:6px}
+</style>
+
+</body>
+</html>
